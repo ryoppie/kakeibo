@@ -1,0 +1,20 @@
+<h1>詳細情報</h1>
+
+<table class="table table-striped">
+
+<tr>
+<th>年月日</th>
+<td>
+<%= @book.year %>年<%= @book.month%>月<%= @book.day%>日</td>
+</tr>
+<tr>
+<th>区分</th><td><%= @book.expend %></td>
+</tr>
+<tr>
+<th>カテゴリ</th><td><%=@book.category%></td>
+</tr>
+<tr>
+<th>金額</th><td><%=@book.amount%>円</td>
+</tr>
+</table>
+<%= link_to"戻る",books_path,class:"btn btn-secondary" %>
